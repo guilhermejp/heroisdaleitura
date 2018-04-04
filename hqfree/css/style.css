@@ -1,0 +1,401 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,100,300,700,400);
+* {
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background: none;
+    border-bottom: 3px solid #fff;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #333;
+}
+
+.ruper {
+    background: #FF9900;
+    border: 0!Important;
+}
+
+section#header_website {
+    background: url(../img/background_header.jpg) 0 0 no-repeat;
+    min-height: 205px;
+}
+
+.searchbar {
+    padding: 90px 0;
+}
+
+.top_users {
+    float: right;
+    margin-top: 8px;
+}
+
+.top_users a.login {
+    border-radius: 5px;
+    color: #666;
+    display: block;
+    float: left;
+    margin-right: 7px;
+    background: #fff;
+    padding: 6px 10px;
+}
+
+.top_users a.cadastro {
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid #fff;
+    display: block;
+    float: left;
+    padding: 5px 10px;
+}
+
+.top_users a.login:hover {
+    background: #FFBD5B;
+    text-decoration: none;
+}
+
+.top_users a.cadastro:hover {
+    background: #fff;
+    text-decoration: none;
+    color: #666;
+}
+
+input#search_topo {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    opacity: 0.65;
+    color: #000;
+    border-radius: 5px 0px 0px 5px;
+    float: left;
+    max-width: 85%;
+}
+
+.col-side {
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+	overflow:hidden;
+}
+
+.hq_foto {
+    width: 220px;
+    height: 355px;    
+    margin: auto;
+}
+
+.hq_info {
+    height: 60px;
+}
+
+.mini_thumb {
+    float: left;
+    margin-right: 7px;
+}
+
+.mini_thumb img {
+    width: 76px;
+    height: 63px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.side_infos {
+    float: left;
+	max-width:73%;
+}
+
+.side_infos h5 {
+    margin-top: 0;
+    margin-bottom: 1px;
+}
+
+.side_infos .stars label.star {
+    margin-bottom: 0;
+}
+
+.side_infos span.views {
+    float: left;
+    margin-left: 2px;
+}
+
+.col-side-right {
+    overflow: hidden;
+    background: #f2f2f2;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.col-side-right .titulos h3 {
+    background: #FF9900;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    margin-top: 0;
+    color: #fff;
+}
+
+.mais_votadas {
+    overflow: hidden;
+}
+
+.btn_search {
+    border: 0;
+    background: #9B9B9B url(../img/icon_lupa.png) 15px 11px no-repeat;
+    padding: 11px 23px;
+    text-indent: -9999px;
+    float: left;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.btn_search:hover {
+    background-color: #676767;
+}
+
+div.spacer_hq {
+    overflow: hidden;
+    height: 35px;
+    width: 100%;
+}
+
+.paginador {
+    clear: both;
+    text-align: center;
+    width: auto;
+}
+
+.hq_ampliada {
+    overflow: hidden;
+    margin: 25px 0;
+    width: 100%;
+}
+
+.hq_ampliada ul li {
+    margin: 15px 0;
+}
+
+.hq_ampliada img {
+    margin: auto;
+}
+
+.modo_exibicao {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+span.btn-exibicao a {
+    color: #fff!important;
+}
+
+span.btn-exibicao a:hover {
+    text-decoration: none;
+}
+
+span.btn-exibicao {
+    padding: 7px 15px;
+    background: #FF9900;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #fff;
+}
+
+span.btn-exibicao:hover {
+    background: #FF7700;
+}
+
+.container-interno-hq {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-interno-hq [class*="col-"] { min-height:295px; } 
+
+.titulos h3 {
+    border-left: 4px solid #FF9900;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    margin-top: 0;
+}
+
+.titulo_interno {
+    float: left;
+}
+
+.hq_info h4 {
+    margin-bottom: 0;
+    color: #666;
+    font-weight: normal;
+}
+
+.hq_info span {
+    margin-bottom: 5px;
+    display: block;
+    color: #666;
+}
+
+.hq_stars {
+    overflow: hidden;
+    margin-bottom: 3px;
+}
+
+span.nota_media {
+    color: #999;
+    display: block;
+    float: left;
+    font-size: 12px;
+}
+
+span.votos_gerais {
+    color: #999;
+    display: block;
+    float: right;
+    font-size: 12px;
+}
+
+.filtro_editora {
+    width: 70%;
+    float: right;
+    text-align: right;
+}
+
+.filtro_editora select {
+    margin-left: 7px;
+    width: 220px;
+    padding: 5px 10px;
+    background: #fff;
+    color: #666;
+    border-radius: 5px;
+}
+
+.hq_favoritos_btn {
+    font-size: 13px;
+    text-align: center;
+    padding: 5px;
+    background: #f1f1f1;
+}
+
+.hq_data_views {
+    overflow: hidden;
+    margin: 4px 0;
+}
+
+span.views {
+    background: url(../img/icon_views.jpg) left center no-repeat;
+    padding-left: 17px;
+    display: block;
+    float: right;
+    font-size: 10px;
+    color: #999;
+}
+
+span.data {
+    font-size: 10px;
+    color: #999;
+    float: left;
+}
+
+
+/* STARS RATING */
+
+.cont {
+    text-align: center;
+    padding: 7px 0 0 0;
+    color: #EEE;
+    border: thin solid #f1f1f1;
+    overflow: hidden;
+}
+
+hr {
+    margin: 20px;
+    border: none;
+    border-bottom: thin solid rgba(255, 255, 255, .1);
+}
+
+div.title {
+    font-size: 2em;
+}
+
+h1 span {
+    font-weight: 300;
+    color: #Fd4;
+}
+
+div.stars {
+    display: inline-block;
+}
+
+div.stars label {
+    font-weight: 500!important;
+}
+
+input.star {
+    display: none;
+}
+
+label.star {
+    float: right;
+    padding: 2px;
+    font-size: 17px;
+    color: #999;
+    transition: all .2s;
+}
+
+input.star:checked~label.star:before {
+    content: '\f005';
+    color: #FD4;
+    transition: all .25s;
+}
+
+input.star-10:checked~label.star:before {
+    color: #FE7;
+    text-shadow: 0 0 1px #FD4;
+}
+
+input.star-1:checked~label.star:before {
+    color: #F62;
+}
+
+label.star:hover {
+    transform: rotate(-15deg) scale(1.3);
+}
+
+label.star:before {
+    content: '\f006';
+    font-family: FontAwesome;
+}
+
+
+/* General sizing */
+
+ul.dropdown-lr {
+    width: 300px;
+}
+
+
+/* mobile fix */
+
+@media (max-width: 768px) {
+    .dropdown-lr h3 {
+        color: #eee;
+    }
+    .dropdown-lr label {
+        color: #eee;
+    }
+	.col-side-right { 
+		margin-top:20px;
+	}
+}
