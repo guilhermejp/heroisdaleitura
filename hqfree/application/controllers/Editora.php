@@ -21,6 +21,9 @@ class Editora extends ControllerBase
 
     public function Index()
     {
+        // Inside helper (login_helper)
+        checkAdmin();
+        
         $data = null;    
         $data['editoras'] = $this->EditoraModel->GetAll();        
 
@@ -35,6 +38,9 @@ class Editora extends ControllerBase
 
     public function Cadastrar()
     {        
+        // Inside helper (login_helper)
+        checkAdmin();
+        
         $data    = NULL;
         $code    = -1;
         $message = ""; 
@@ -69,6 +75,9 @@ class Editora extends ControllerBase
     
     public function Excluir($id)
     {        
+        // Inside helper (login_helper)
+        checkAdmin();
+        
         $data    = null;
         $code    = -1;
         $message = 'Erro';
@@ -95,6 +104,9 @@ class Editora extends ControllerBase
 
     public function CarregaAlterar($id)
     {        
+        // Inside helper (login_helper)
+        checkAdmin();
+        
         $data    = null;
         $code    = -1;
         $message = '';
@@ -107,6 +119,9 @@ class Editora extends ControllerBase
 
     public function AlterarEditora()
     {        
+        // Inside helper (login_helper)
+        checkAdmin();
+        
         $data    = NULL;
         $code    = -1;
         $message = "erro"; 

@@ -22,12 +22,18 @@ class Capitulo extends ControllerBase
     
     public function Index()
     {
+        // Inside helper (login_helper)
+        checkAdmin();
+        
       $data = null;  
       $this->pageView     = 'admin/cadastro-capitulo';                      
       $this->LoadView($data);
     }    
 
     public function CadastroCapitulo($idrevista){
+        // Inside helper (login_helper)
+        checkAdmin();
+        
       $data = null;  
       $this->pageView     = 'admin/cadastro-capitulo';                
 
@@ -51,6 +57,9 @@ class Capitulo extends ControllerBase
 
     public function Cadastrar()
     {        
+        // Inside helper (login_helper)
+        checkAdmin();
+        
         $data    = NULL;
         $code    = -1;
         $message = ""; 
@@ -99,6 +108,9 @@ class Capitulo extends ControllerBase
     
     public function Excluir($idrevista, $capitulo)
     {        
+        // Inside helper (login_helper)
+        checkAdmin();
+        
         $data    = null;
         $code    = -1;
         $message = 'Erro';
@@ -130,6 +142,9 @@ class Capitulo extends ControllerBase
 
     public function CarregaAlterar($idrevista, $idcapitulo)
     {        
+        // Inside helper (login_helper)
+        checkAdmin();
+        
         $data    = null;
         $code    = -1;
         $message = '';
@@ -151,6 +166,9 @@ class Capitulo extends ControllerBase
     }
 
     public function UploadAlteracao() {
+        // Inside helper (login_helper)
+        checkAdmin();
+        
         if (!empty($_FILES) && !empty($_POST)) {
             $targetPath = getcwd().'/img/hq/'.$_POST['idRevista'].'/Capitulo-'.$_POST['idCapitulo'];
 
@@ -174,6 +192,9 @@ class Capitulo extends ControllerBase
 
     public function AlterarCapitulo()
     {        
+        // Inside helper (login_helper)
+        checkAdmin();
+        
         
         $data    = NULL;
         $code    = -1;

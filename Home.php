@@ -54,8 +54,8 @@ class Home extends ControllerBase
             $idusuario = $this->userSession->id;
         }
 
-        $data['revistas'] = $this->RevistaModel->getMain2($idusuario);  
-        
+        $data['revistas'] = $this->RevistaModel->getMain($idusuario);  
+
         $this->LoadView($data);
     }
     
@@ -70,7 +70,7 @@ class Home extends ControllerBase
         if($this->HasUserSession() && Tools::IsValid($this->userSession)){
             $idusuario = $this->userSession->id;
         }
-
+        
         $data['revistas'] = $this->RevistaModel->GetAllRevista($idusuario); 
         $data['editoras'] = $this->EditoraModel->GetAll();       
         $data['filtro_ordem'] = "";
@@ -82,7 +82,7 @@ class Home extends ControllerBase
 
     public function ConsultarRevista(){
         $titulo      = $this->input->post('search_topo', TRUE);
-
+        
         $data = null;  
         $this->pageView     = 'home/lista-hq';
         $this->activeSearch = true;
@@ -93,7 +93,7 @@ class Home extends ControllerBase
         }
 
         $data['editoras'] = $this->EditoraModel->GetAll();       
-        $data['revistas'] = $this->RevistaModel->GetRevistaByFilro3($titulo, null, null, $idusuario); 
+        $data['revistas'] = $this->RevistaModel->GetRevistaByFilro($titulo, null, null, $idusuario); 
         $data['filtro']   = $titulo;
         $data['filtro_ordem'] = "";
         $data['filtro_editora'] = "";
@@ -115,7 +115,7 @@ class Home extends ControllerBase
         }
 
         $data['editoras'] = $this->EditoraModel->GetAll();       
-        $data['revistas'] = $this->RevistaModel->GetRevistaByFilro3(null, $editora, $ordem, $idusuario);         
+        $data['revistas'] = $this->RevistaModel->GetRevistaByFilro(null, $editora, $ordem, $idusuario);         
         $data['filtro_ordem'] = $ordem;
         $data['filtro_editora'] = $editora;
 

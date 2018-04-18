@@ -20,6 +20,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     
+	<!-- Favicon -->
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo SITE_URL; ?>/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo SITE_URL; ?>img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo SITE_URL; ?>/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="<?php echo SITE_URL; ?>/img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="<?php echo SITE_URL; ?>img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	
     <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL; ?>/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL; ?>/css/style.css">

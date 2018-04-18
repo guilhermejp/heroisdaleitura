@@ -3,7 +3,7 @@
 
     <div class="col-md-8 col-xs-12">
       <div class="titulos">
-        <h3>Atualizações</h3>
+        <h3>Lista de HQ's</h3>
       </div>
       
       <div class="listagem-hqs">
@@ -21,11 +21,7 @@
                   echo $obj->titulo;
                 }
               ?></h4>
-                <span>Capítulo #<?php echo $obj->numero;?> ~ Capítulo #<?php echo $obj->numero_final;?><br>
-                    <?php if($obj->descricao != "" || $obj->descricao_final != ""){?>
-                    <small><?php echo $obj->descricao;?> ~ <?php echo $obj->descricao_final;?></small>
-                    <?php }?>
-                </span>
+              <span>Capítulo #<?php echo $obj->numero;?> ~ Capitulo #<?php echo $obj->numero_final;?></span>
             </div>
             <div class="hq_foto">
               <a href="<?php echo $baseURL.'/visao/geral/'.$obj->id; ?>">
